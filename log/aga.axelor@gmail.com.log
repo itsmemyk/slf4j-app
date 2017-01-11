@@ -1,0 +1,18 @@
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - 
+
+
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ========================
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - Name : Akshay
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ------------------------
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - Task List :::: 
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ------------------------
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - 1. JUnit
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Create one demo java Application for jUnit Testing
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Completed , 11 Jan, 2017 1:26:18 PM
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - 2. Slf4j
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Create one demo java Application to make custom logging system
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Completed , 11 Jan, 2017 1:26:18 PM
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - 3. Git
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Create single app, maintain different programs in different branch
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Completed , 11 Jan, 2017 1:26:18 PM
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ========================

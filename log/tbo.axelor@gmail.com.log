@@ -1,0 +1,12 @@
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - 
+
+
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ========================
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - Name : Tushar
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ------------------------
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - Task List :::: 
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ------------------------
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - 1. Gradle
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Create java app using gradle [Hint: apply dependency]
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee -  - Pending 
+2017-01-11 13:26:18 [main] INFO com.axelor.app.Trainee - ========================
