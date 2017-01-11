@@ -67,7 +67,7 @@ public class Trainee {
 			Task task = this.tasks.get(i);
 			String status = task.isCompleted() ? "Completed" : "Pending";
 			
-			logs.add((i+1) + ". "+task.getTitle());
+			logs.add((i+1) + ". " + task.getTitle() + "\t\t\t" + task.getCreatedAt().toLocaleString());
 			logs.add(" - " + task.getDescription());
 			logs.add(" - " + status + " " + (task.isCompleted() ? ", " + task.getCompletedAt().toLocaleString() : ""));
 		}
