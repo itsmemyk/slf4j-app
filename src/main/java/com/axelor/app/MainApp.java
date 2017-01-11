@@ -1,5 +1,6 @@
 package com.axelor.app;
 
+import java.util.Arrays;
 
 public class MainApp {
     
@@ -18,26 +19,22 @@ public class MainApp {
 		Trainee tboAxelor = new Trainee("Tushar", "tbo");
 		Trainee mmahAxelor = new Trainee("Mayank", "mmah");
 		
-		agaAxelor.assign(junit);
-		agaAxelor.assign(slf4j);
-		agaAxelor.assign(git);
-
+		Arrays.asList(junit, slf4j, git).forEach(t -> agaAxelor.assign(t));		
 		agaAxelor.completeAll();
 		
 		jsoAxelor.assign(eclipse);		
 		ugoAxelor.assign(joiningReport);		
 		tboAxelor.assign(gradle);
 		
-		mmahAxelor.assign(training);
-		mmahAxelor.complete(training);
+		Arrays.asList(training).forEach(t -> {
+			mmahAxelor.assign(t);
+			mmahAxelor.complete(t);
+		});				
 		
     	Team axelor= new Team("Axelor Trainees");
-    	axelor.addMember(agaAxelor);
-    	axelor.addMember(jsoAxelor);
-    	axelor.addMember(ugoAxelor);
-    	axelor.addMember(tboAxelor);
-    	axelor.addMember(mmahAxelor);
-    	axelor.addMember(mmahAxelor); // should skip it duplicate trainee, log error
+    	
+    	Arrays.asList(agaAxelor, jsoAxelor, ugoAxelor, tboAxelor, mmahAxelor, mmahAxelor)
+			.forEach(m -> axelor.addMember(m));
     	
     	axelor.logReports();
     }

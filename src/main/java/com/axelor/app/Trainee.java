@@ -54,23 +54,29 @@ public class Trainee {
 	}
 	
 	public void logTaskList() {
-		MDC.put("traineeCode", this.username + ".axelor@gmail.com");
+		List<String> logs = new ArrayList<String>();
 		
-		LOGGER.info("\n\n");
-		LOGGER.info("========================");
-		LOGGER.info("Name : " +this.name);
-		LOGGER.info("------------------------");
-		LOGGER.info("Task List :::: ");
-		LOGGER.info("------------------------");
+		logs.add("\n\n");
+		logs.add("========================");
+		logs.add("Name : " +this.name);
+		logs.add("------------------------");
+		logs.add("Task List :::: ");
+		logs.add("------------------------");
+		
 		for(int i = 0; i < this.tasks.size(); i++) {
 			Task task = this.tasks.get(i);
 			String status = task.isCompleted() ? "Completed" : "Pending";
 			
-			LOGGER.info((i+1) + ". "+task.getTitle());
-			LOGGER.info(" - " + task.getDescription());
-			LOGGER.info(" - " + status + " " + (task.isCompleted() ? ", " + task.getCompletedAt().toLocaleString() : ""));
+			logs.add((i+1) + ". "+task.getTitle());
+			logs.add(" - " + task.getDescription());
+			logs.add(" - " + status + " " + (task.isCompleted() ? ", " + task.getCompletedAt().toLocaleString() : ""));
 		}
-		LOGGER.info("========================");
+		
+		logs.add("========================");
+		
+		MDC.put("traineeCode", this.username + ".axelor@gmail.com");
+		
+		logs.forEach(LOGGER::info);
 		
 		MDC.remove("traineeCode");
 	}
