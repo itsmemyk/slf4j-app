@@ -37,6 +37,7 @@ public class MainApp {
     	axelor.addMember(ugoAxelor);
     	axelor.addMember(tboAxelor);
     	axelor.addMember(mmahAxelor);
+    	axelor.addMember(mmahAxelor); // should skip it duplicate trainee, log error
     	
     	axelor.logReports();
     }
